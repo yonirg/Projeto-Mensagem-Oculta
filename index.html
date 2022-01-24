@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Oculta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Codifique e Descodifique sua mensaem aqui !</h1>
+    </header>
+    <section>
+        <label for="mensagem"></label>
+        <textarea id="mensagem" cols="70" rows="10" placeholder="Digite aqui sua mensagem"></textarea>
+        <p>Selecione o tipo de codificação:</p>
+        <input type="radio" name="codigo" id="base" checked>
+        <label for="base">Base64</label>
+        <input type="radio" name="codigo" id="cifra">
+        <label for="cifra">Cifra de César</label> 
+        
+        <p>Selecione a opção desejada</p>
+        <input type="radio" id="codificar"  name="acao" checked >
+        <label for="codificar">Codificar</label><br><br> 
+        <input type="radio" id="decodificar" name="acao" >
+        <label for="decodificar">Decodificar</label><br><br><br>
+
+        <button style="height: 100px; width: 100px;"  onclick="btn()">Clique para o resultado</button>
+    </section>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
